@@ -1,0 +1,69 @@
+POST http://localhost:4000/admin-api/login
+Content-Type: application/json
+
+{
+    "userType": "admin",
+    "username": "admin",
+    "password": "admin"
+}
+
+#####
+POST http://localhost:4000/admin-api/new-book
+Content-Type: application/json
+
+{
+    "bookId": "3164Awdfe",
+    "bookname": "Alchemist",
+    "quantity": 20,
+    "link":""
+}
+
+####
+GET http://localhost:4000/admin-api/all-books
+
+#####
+POST http://localhost:4000/admin-api/assign-book
+Content-Type: application/json
+
+{
+    "username":"junior",
+    "bookId": "3164Awdfe",
+    "bookname": "Alchemist",
+    "quantity": 20,
+    "dateOfIssue": "2021-08-0",
+    "link":""
+}
+
+#####
+POST http://localhost:4000/admin-api/retrieve-book
+Content-Type: application/json
+
+{
+    "username":"nik",
+    "bookId": "3164Awdfe",
+    "bookname": "Alchemist",
+    "quantity": 20,
+    "dateOfIssue": "2021-08-0",
+    "link":""
+}
+
+
+####
+POST http://localhost:4000/user-api/register
+Content-Type: application/json
+
+{
+    "username": "nik",
+    "password": "nik",
+    "books":[]
+}
+
+####
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType": "user",
+    "username": "nik",
+    "password": "nik"
+}
